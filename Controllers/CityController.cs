@@ -16,10 +16,10 @@ namespace nihonhotelapi.Controllers
         }
 
         [HttpGet("")]
-        public IEnumerable<string> GetStrings()
+        public IEnumerable<string> Getstrings()
         {
             //return new List<string> { };
-            return new string[]{"Atlanta,","Florida","Los Angeles"};
+            return new string[]{"Atlanta,","Florida","Los Angeles", "Saint Tropez","Ibiza"};
         }
     }
 }

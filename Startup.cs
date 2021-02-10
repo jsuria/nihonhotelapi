@@ -25,6 +25,19 @@ namespace nihonhotelapi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Enabling CORS for testing locally
+            // Consider for live as well
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CORSActivateLocal",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost")
+                                    .AllowAnyHeader()
+                                    .AllowAnyMethod();
+                    }
+                );
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -44,6 +57,8 @@ namespace nihonhotelapi
             }
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
