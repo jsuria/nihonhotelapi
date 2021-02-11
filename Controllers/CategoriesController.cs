@@ -18,9 +18,19 @@ namespace nihonhotelapi.Controllers
         // if using VS Code 
         [EnableCors("CORSActivateLocal")]
         [HttpGet("")]
-        public IEnumerable<string> Getstrings()
+        public IEnumerable<Category> Get()
         {
-            return new string[]{"Hotels","Homestay","Bed and Breakfast", "Inn","Resorts"};
+            Category[] list = new Category[5];
+            string[] labels = {"Hotels","Homestay","Bed and Breakfast", "Inn","Resorts"};
+            
+            for(int i=0; i<5; i++){
+                list[i] = new Category{
+                    Name =labels[i],
+                    RouteKeyword =labels[i].ToLower()
+                };
+            }
+
+            return list;
         }
     }
 }
