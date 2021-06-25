@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jsuriajr\\projects\\nihonhotelapi\\nihonhotelapi.csproj": {}
+    "C:\\Users\\mikoj\\source\\repos\\nihonhotelapi\\nihonhotelapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jsuriajr\\projects\\nihonhotelapi\\nihonhotelapi.csproj": {
+    "C:\\Users\\mikoj\\source\\repos\\nihonhotelapi\\nihonhotelapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jsuriajr\\projects\\nihonhotelapi\\nihonhotelapi.csproj",
+        "projectUniqueName": "C:\\Users\\mikoj\\source\\repos\\nihonhotelapi\\nihonhotelapi.csproj",
         "projectName": "nihonhotelapi",
-        "projectPath": "C:\\Users\\jsuriajr\\projects\\nihonhotelapi\\nihonhotelapi.csproj",
-        "packagesPath": "C:\\Users\\jsuriajr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jsuriajr\\projects\\nihonhotelapi\\obj\\",
+        "projectPath": "C:\\Users\\mikoj\\source\\repos\\nihonhotelapi\\nihonhotelapi.csproj",
+        "packagesPath": "C:\\Users\\mikoj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikoj\\source\\repos\\nihonhotelapi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jsuriajr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mikoj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

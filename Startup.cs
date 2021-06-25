@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -32,7 +33,7 @@ namespace nihonhotelapi
                 options.AddPolicy("CORSActivateLocal",
                     builder =>
                     {
-                        builder.WithOrigins("http://localhost")
+                        builder.WithOrigins("http://localhost","http://127.0.0.1")
                                     .AllowAnyHeader()
                                     .AllowAnyMethod();
                     }
